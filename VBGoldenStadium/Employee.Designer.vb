@@ -80,6 +80,7 @@ Partial Class Employee
         '
         'Id
         '
+        Me.Id.Enabled = False
         Me.Id.Location = New System.Drawing.Point(314, 339)
         Me.Id.Margin = New System.Windows.Forms.Padding(2)
         Me.Id.Name = "Id"
