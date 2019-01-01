@@ -25,7 +25,6 @@ Partial Class SeatManage
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.matchid = New System.Windows.Forms.TextBox()
         Me.capacity = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gate = New System.Windows.Forms.TextBox()
@@ -43,6 +42,7 @@ Partial Class SeatManage
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Searchh = New System.Windows.Forms.TextBox()
+        Me.matchid = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.TableEmp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -80,15 +80,6 @@ Partial Class SeatManage
         Me.Label4.TabIndex = 38
         Me.Label4.Text = "Gate"
         '
-        'matchid
-        '
-        Me.matchid.Location = New System.Drawing.Point(314, 383)
-        Me.matchid.Margin = New System.Windows.Forms.Padding(2)
-        Me.matchid.MaxLength = 50
-        Me.matchid.Name = "matchid"
-        Me.matchid.Size = New System.Drawing.Size(162, 20)
-        Me.matchid.TabIndex = 59
-        '
         'capacity
         '
         Me.capacity.Location = New System.Drawing.Point(176, 196)
@@ -119,6 +110,7 @@ Partial Class SeatManage
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel2.Controls.Add(Me.matchid)
         Me.Panel2.Controls.Add(Me.Delete)
         Me.Panel2.Controls.Add(Me.price)
         Me.Panel2.Controls.Add(Me.Label6)
@@ -265,6 +257,14 @@ Partial Class SeatManage
         Me.Searchh.Size = New System.Drawing.Size(174, 20)
         Me.Searchh.TabIndex = 65
         '
+        'matchid
+        '
+        Me.matchid.Location = New System.Drawing.Point(176, 120)
+        Me.matchid.Margin = New System.Windows.Forms.Padding(2)
+        Me.matchid.Name = "matchid"
+        Me.matchid.Size = New System.Drawing.Size(162, 20)
+        Me.matchid.TabIndex = 55
+        '
         'SeatManage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -273,7 +273,6 @@ Partial Class SeatManage
         Me.Controls.Add(Me.Searchh)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.matchid)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.TableEmp)
         Me.Controls.Add(Me.Panel1)
@@ -302,7 +301,6 @@ Partial Class SeatManage
     Friend WithEvents gate As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents capacity As TextBox
-    Friend WithEvents matchid As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label2 As Label
@@ -310,4 +308,5 @@ Partial Class SeatManage
     Friend WithEvents Label6 As Label
     Friend WithEvents Delete As Button
     Friend WithEvents Searchh As TextBox
+    Friend WithEvents matchid As TextBox
 End Class
