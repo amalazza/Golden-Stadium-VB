@@ -148,4 +148,7 @@ Public Class SeatManage
         Load_Table()
     End Sub
 
+    Private Sub TableEmp_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles TableEmp.CellContentClick
+
+    End Sub
 End Class

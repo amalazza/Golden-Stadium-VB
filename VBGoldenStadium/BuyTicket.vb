@@ -11,11 +11,12 @@ Public Class BuyTicket
     Dim seatleft As Integer
     Public totprice As String
     Public empid As String
+    Public Property ID As String
     Private Sub BuyTicket_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtTime.Enabled = False
         txtGate.Enabled = False
         txtTotPrice.Enabled = False
-
+        txtEmpId.Text = ID
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
         "server=localhost;userid=root;database=goldenstadium"
@@ -30,6 +31,7 @@ Public Class BuyTicket
                 Do While reader.Read
                     cboMatch.Items.Add(reader("matchh"))
                 Loop
+                txtEmpId.Text = ID
             Else
             End If
             MySqlConn.Close()
@@ -261,7 +263,7 @@ Public Class BuyTicket
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Form1.Show()
         Me.Hide()
+        Form1.Show()
     End Sub
 End Class
