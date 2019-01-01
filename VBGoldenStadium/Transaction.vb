@@ -41,15 +41,15 @@ Public Class Transaction
 
         If e.RowIndex >= 0 Then
 
-            transacidd.Text = TableEmp.Rows(e.RowIndex).Cells(0).Value
-            e_namee.Text = TableEmp.Rows(e.RowIndex).Cells(1).Value
-            matchhh.Text = TableEmp.Rows(e.RowIndex).Cells(2).Value
-            dateee.Text = TableEmp.Rows(e.RowIndex).Cells(3).Value
-            timeee.Text = TableEmp.Rows(e.RowIndex).Cells(4).Value
-            tribune_namee.Text = TableEmp.Rows(e.RowIndex).Cells(5).Value
-            gatee.Text = TableEmp.Rows(e.RowIndex).Cells(6).Value
-            quantityy.Text = TableEmp.Rows(e.RowIndex).Cells(7).Value
-            total_pricee.Text = TableEmp.Rows(e.RowIndex).Cells(8).Value
+            transacidd.Text = TableEmp.Rows(e.RowIndex).Cells(0).Value.ToString
+            e_namee.Text = TableEmp.Rows(e.RowIndex).Cells(1).Value.ToString
+            matchhh.Text = TableEmp.Rows(e.RowIndex).Cells(2).Value.ToString
+            dateee.Text = TableEmp.Rows(e.RowIndex).Cells(3).Value.ToString
+            timeee.Text = TableEmp.Rows(e.RowIndex).Cells(4).Value.ToString
+            tribune_namee.Text = TableEmp.Rows(e.RowIndex).Cells(5).Value.ToString
+            gatee.Text = TableEmp.Rows(e.RowIndex).Cells(6).Value.ToString
+            quantityy.Text = TableEmp.Rows(e.RowIndex).Cells(7).Value.ToString
+            total_pricee.Text = TableEmp.Rows(e.RowIndex).Cells(8).Value.ToString
 
         End If
     End Sub
