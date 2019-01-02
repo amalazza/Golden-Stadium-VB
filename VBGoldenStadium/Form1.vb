@@ -30,7 +30,7 @@ Public Class Form1
 
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+            "server=localhost;userid=root;password=;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
