@@ -14,7 +14,7 @@ Public Class MatchManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+            "server=localhost;userid=root;password=;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -41,7 +41,7 @@ Public Class MatchManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+            "server=localhost;userid=root;password=;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -74,7 +74,7 @@ Public Class MatchManage
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+        "server=localhost;userid=root;password=;database=goldenstadium"
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
 

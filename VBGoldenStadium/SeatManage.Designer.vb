@@ -134,7 +134,7 @@ Partial Class SeatManage
         Me.Panel2.Location = New System.Drawing.Point(139, 260)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(386, 298)
+        Me.Panel2.Size = New System.Drawing.Size(386, 332)
         Me.Panel2.TabIndex = 64
         '
         'Delete

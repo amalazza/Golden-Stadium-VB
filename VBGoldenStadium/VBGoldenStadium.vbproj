@@ -56,6 +56,8 @@
       <HintPath>..\packages\MySql.Data.8.0.13\lib\net452\MySql.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -68,11 +70,15 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -94,10 +100,22 @@
     <Compile Include="Admin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin2.Designer.vb">
+      <DependentUpon>Admin2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BuyTicket.Designer.vb">
       <DependentUpon>BuyTicket.vb</DependentUpon>
     </Compile>
     <Compile Include="BuyTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyTicket2.Designer.vb">
+      <DependentUpon>BuyTicket2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyTicket2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee.Designer.vb">
@@ -106,11 +124,22 @@
     <Compile Include="Employee.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Employee2.Designer.vb">
+      <DependentUpon>Employee2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchManage2.Designer.vb">
+      <DependentUpon>MatchManage2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MatchManage2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SeatManage.Designer.vb">
@@ -140,10 +169,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SeatManage2.Designer.vb">
+      <DependentUpon>SeatManage2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeatManage2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Transaction.Designer.vb">
       <DependentUpon>Transaction.vb</DependentUpon>
     </Compile>
     <Compile Include="Transaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction2.Designer.vb">
+      <DependentUpon>Transaction2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction2.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -151,14 +192,26 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin2.resx">
+      <DependentUpon>Admin2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuyTicket.resx">
       <DependentUpon>BuyTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyTicket2.resx">
+      <DependentUpon>BuyTicket2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee2.resx">
+      <DependentUpon>Employee2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchManage2.resx">
+      <DependentUpon>MatchManage2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SeatManage.resx">
       <DependentUpon>SeatManage.vb</DependentUpon>
@@ -172,8 +225,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="SeatManage2.resx">
+      <DependentUpon>SeatManage2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transaction.resx">
       <DependentUpon>Transaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction2.resx">
+      <DependentUpon>Transaction2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +247,21 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_and_control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uname.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

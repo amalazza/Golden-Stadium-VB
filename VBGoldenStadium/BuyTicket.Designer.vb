@@ -25,34 +25,36 @@ Partial Class BuyTicket
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtEmpId = New System.Windows.Forms.TextBox()
-        Me.txtTime = New System.Windows.Forms.TextBox()
-        Me.txtGate = New System.Windows.Forms.TextBox()
-        Me.txtQuantity = New System.Windows.Forms.TextBox()
-        Me.txtTotPrice = New System.Windows.Forms.TextBox()
-        Me.btnCheck = New System.Windows.Forms.Button()
-        Me.btnBuy = New System.Windows.Forms.Button()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.lblSeatLeft = New System.Windows.Forms.Label()
-        Me.cboDate = New System.Windows.Forms.ComboBox()
-        Me.cboMatch = New System.Windows.Forms.ComboBox()
-        Me.cboTribune = New System.Windows.Forms.ComboBox()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblHargaTiketSatuan = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.cboTribune = New System.Windows.Forms.ComboBox()
+        Me.cboMatch = New System.Windows.Forms.ComboBox()
+        Me.cboDate = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.btnBuy = New System.Windows.Forms.Button()
+        Me.btnCheck = New System.Windows.Forms.Button()
+        Me.txtTotPrice = New System.Windows.Forms.TextBox()
+        Me.txtQuantity = New System.Windows.Forms.TextBox()
+        Me.txtGate = New System.Windows.Forms.TextBox()
+        Me.txtTime = New System.Windows.Forms.TextBox()
+        Me.txtEmpId = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.OrangeRed
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
@@ -74,149 +76,14 @@ Partial Class BuyTicket
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Lucida Sans Typewriter", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(203, 43)
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semilight", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(167, 34)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(207, 37)
+        Me.Label11.Size = New System.Drawing.Size(269, 65)
         Me.Label11.TabIndex = 27
         Me.Label11.Text = "BUY TICKET"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 134)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
-        Me.Label1.TabIndex = 56
-        Me.Label1.Text = "EMP ID"
-        Me.Label1.Visible = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(26, 172)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
-        Me.Label2.TabIndex = 57
-        Me.Label2.Text = "Match"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(26, 210)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(30, 13)
-        Me.Label3.TabIndex = 58
-        Me.Label3.Text = "Date"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(26, 250)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 13)
-        Me.Label4.TabIndex = 59
-        Me.Label4.Text = "Time"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(27, 288)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(43, 13)
-        Me.Label5.TabIndex = 60
-        Me.Label5.Text = "Tribune"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 328)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(30, 13)
-        Me.Label6.TabIndex = 61
-        Me.Label6.Text = "Gate"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(27, 400)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(46, 13)
-        Me.Label7.TabIndex = 62
-        Me.Label7.Text = "Quantity"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(27, 441)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 13)
-        Me.Label8.TabIndex = 63
-        Me.Label8.Text = "Total Price"
-        '
-        'txtEmpId
-        '
-        Me.txtEmpId.Location = New System.Drawing.Point(109, 131)
-        Me.txtEmpId.Name = "txtEmpId"
-        Me.txtEmpId.Size = New System.Drawing.Size(100, 20)
-        Me.txtEmpId.TabIndex = 64
-        Me.txtEmpId.Visible = False
-        '
-        'txtTime
-        '
-        Me.txtTime.Location = New System.Drawing.Point(109, 247)
-        Me.txtTime.Name = "txtTime"
-        Me.txtTime.Size = New System.Drawing.Size(100, 20)
-        Me.txtTime.TabIndex = 67
-        '
-        'txtGate
-        '
-        Me.txtGate.Location = New System.Drawing.Point(109, 325)
-        Me.txtGate.Name = "txtGate"
-        Me.txtGate.Size = New System.Drawing.Size(100, 20)
-        Me.txtGate.TabIndex = 69
-        '
-        'txtQuantity
-        '
-        Me.txtQuantity.Location = New System.Drawing.Point(109, 397)
-        Me.txtQuantity.Name = "txtQuantity"
-        Me.txtQuantity.Size = New System.Drawing.Size(100, 20)
-        Me.txtQuantity.TabIndex = 70
-        '
-        'txtTotPrice
-        '
-        Me.txtTotPrice.Location = New System.Drawing.Point(109, 438)
-        Me.txtTotPrice.Name = "txtTotPrice"
-        Me.txtTotPrice.Size = New System.Drawing.Size(100, 20)
-        Me.txtTotPrice.TabIndex = 71
-        '
-        'btnCheck
-        '
-        Me.btnCheck.Location = New System.Drawing.Point(232, 395)
-        Me.btnCheck.Name = "btnCheck"
-        Me.btnCheck.Size = New System.Drawing.Size(75, 23)
-        Me.btnCheck.TabIndex = 75
-        Me.btnCheck.Text = "Check"
-        Me.btnCheck.UseVisualStyleBackColor = True
-        '
-        'btnBuy
-        '
-        Me.btnBuy.Location = New System.Drawing.Point(419, 304)
-        Me.btnBuy.Name = "btnBuy"
-        Me.btnBuy.Size = New System.Drawing.Size(122, 61)
-        Me.btnBuy.TabIndex = 76
-        Me.btnBuy.Text = "Buy"
-        Me.btnBuy.UseVisualStyleBackColor = True
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(416, 172)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 13)
-        Me.Label9.TabIndex = 77
-        Me.Label9.Text = "Seat Left"
         '
         'lblSeatLeft
         '
@@ -227,83 +94,232 @@ Partial Class BuyTicket
         Me.lblSeatLeft.Size = New System.Drawing.Size(0, 37)
         Me.lblSeatLeft.TabIndex = 78
         '
-        'cboDate
+        'GroupBox1
         '
-        Me.cboDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboDate.FormattingEnabled = True
-        Me.cboDate.Location = New System.Drawing.Point(109, 207)
-        Me.cboDate.Name = "cboDate"
-        Me.cboDate.Size = New System.Drawing.Size(121, 21)
-        Me.cboDate.TabIndex = 80
+        Me.GroupBox1.BackColor = System.Drawing.Color.LightSalmon
+        Me.GroupBox1.Controls.Add(Me.lblHargaTiketSatuan)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.cboTribune)
+        Me.GroupBox1.Controls.Add(Me.cboMatch)
+        Me.GroupBox1.Controls.Add(Me.cboDate)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.btnBuy)
+        Me.GroupBox1.Controls.Add(Me.btnCheck)
+        Me.GroupBox1.Controls.Add(Me.txtTotPrice)
+        Me.GroupBox1.Controls.Add(Me.txtQuantity)
+        Me.GroupBox1.Controls.Add(Me.txtGate)
+        Me.GroupBox1.Controls.Add(Me.txtTime)
+        Me.GroupBox1.Controls.Add(Me.txtEmpId)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GroupBox1.Location = New System.Drawing.Point(119, 137)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(370, 321)
+        Me.GroupBox1.TabIndex = 79
+        Me.GroupBox1.TabStop = False
         '
-        'cboMatch
+        'lblHargaTiketSatuan
         '
-        Me.cboMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboMatch.FormattingEnabled = True
-        Me.cboMatch.Location = New System.Drawing.Point(109, 169)
-        Me.cboMatch.Name = "cboMatch"
-        Me.cboMatch.Size = New System.Drawing.Size(121, 21)
-        Me.cboMatch.TabIndex = 81
+        Me.lblHargaTiketSatuan.AutoSize = True
+        Me.lblHargaTiketSatuan.Location = New System.Drawing.Point(246, 162)
+        Me.lblHargaTiketSatuan.Name = "lblHargaTiketSatuan"
+        Me.lblHargaTiketSatuan.Size = New System.Drawing.Size(0, 13)
+        Me.lblHargaTiketSatuan.TabIndex = 105
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(219, 136)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(21, 13)
+        Me.Label10.TabIndex = 104
+        Me.Label10.Text = "Rp"
         '
         'cboTribune
         '
         Me.cboTribune.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTribune.FormattingEnabled = True
         Me.cboTribune.Items.AddRange(New Object() {"Choose Tribune :", "Regular", "VIP"})
-        Me.cboTribune.Location = New System.Drawing.Point(109, 285)
+        Me.cboTribune.Location = New System.Drawing.Point(83, 133)
         Me.cboTribune.Name = "cboTribune"
         Me.cboTribune.Size = New System.Drawing.Size(121, 21)
-        Me.cboTribune.TabIndex = 82
+        Me.cboTribune.TabIndex = 103
         '
-        'Label10
+        'cboMatch
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(245, 288)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(21, 13)
-        Me.Label10.TabIndex = 83
-        Me.Label10.Text = "Rp"
+        Me.cboMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMatch.FormattingEnabled = True
+        Me.cboMatch.Location = New System.Drawing.Point(83, 53)
+        Me.cboMatch.Name = "cboMatch"
+        Me.cboMatch.Size = New System.Drawing.Size(121, 21)
+        Me.cboMatch.TabIndex = 102
         '
-        'lblHargaTiketSatuan
+        'cboDate
         '
-        Me.lblHargaTiketSatuan.AutoSize = True
-        Me.lblHargaTiketSatuan.Location = New System.Drawing.Point(272, 288)
-        Me.lblHargaTiketSatuan.Name = "lblHargaTiketSatuan"
-        Me.lblHargaTiketSatuan.Size = New System.Drawing.Size(0, 13)
-        Me.lblHargaTiketSatuan.TabIndex = 84
+        Me.cboDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboDate.FormattingEnabled = True
+        Me.cboDate.Location = New System.Drawing.Point(83, 80)
+        Me.cboDate.Name = "cboDate"
+        Me.cboDate.Size = New System.Drawing.Size(121, 21)
+        Me.cboDate.TabIndex = 101
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(321, 49)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(50, 13)
+        Me.Label9.TabIndex = 100
+        Me.Label9.Text = "Seat Left"
+        '
+        'btnBuy
+        '
+        Me.btnBuy.Location = New System.Drawing.Point(83, 254)
+        Me.btnBuy.Name = "btnBuy"
+        Me.btnBuy.Size = New System.Drawing.Size(122, 40)
+        Me.btnBuy.TabIndex = 99
+        Me.btnBuy.Text = "Buy"
+        Me.btnBuy.UseVisualStyleBackColor = True
+        '
+        'btnCheck
+        '
+        Me.btnCheck.Location = New System.Drawing.Point(222, 188)
+        Me.btnCheck.Name = "btnCheck"
+        Me.btnCheck.Size = New System.Drawing.Size(75, 23)
+        Me.btnCheck.TabIndex = 98
+        Me.btnCheck.Text = "Check"
+        Me.btnCheck.UseVisualStyleBackColor = True
+        '
+        'txtTotPrice
+        '
+        Me.txtTotPrice.Location = New System.Drawing.Point(83, 214)
+        Me.txtTotPrice.Name = "txtTotPrice"
+        Me.txtTotPrice.Size = New System.Drawing.Size(121, 20)
+        Me.txtTotPrice.TabIndex = 97
+        '
+        'txtQuantity
+        '
+        Me.txtQuantity.Location = New System.Drawing.Point(83, 188)
+        Me.txtQuantity.Name = "txtQuantity"
+        Me.txtQuantity.Size = New System.Drawing.Size(121, 20)
+        Me.txtQuantity.TabIndex = 96
+        '
+        'txtGate
+        '
+        Me.txtGate.Location = New System.Drawing.Point(83, 162)
+        Me.txtGate.Name = "txtGate"
+        Me.txtGate.Size = New System.Drawing.Size(121, 20)
+        Me.txtGate.TabIndex = 95
+        '
+        'txtTime
+        '
+        Me.txtTime.Location = New System.Drawing.Point(83, 107)
+        Me.txtTime.Name = "txtTime"
+        Me.txtTime.Size = New System.Drawing.Size(121, 20)
+        Me.txtTime.TabIndex = 94
+        '
+        'txtEmpId
+        '
+        Me.txtEmpId.Location = New System.Drawing.Point(83, 27)
+        Me.txtEmpId.Name = "txtEmpId"
+        Me.txtEmpId.Size = New System.Drawing.Size(121, 20)
+        Me.txtEmpId.TabIndex = 93
+        Me.txtEmpId.Visible = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(1, 217)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(58, 13)
+        Me.Label8.TabIndex = 92
+        Me.Label8.Text = "Total Price"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(1, 191)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(46, 13)
+        Me.Label7.TabIndex = 91
+        Me.Label7.Text = "Quantity"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(0, 165)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(30, 13)
+        Me.Label6.TabIndex = 90
+        Me.Label6.Text = "Gate"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(1, 136)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(43, 13)
+        Me.Label5.TabIndex = 89
+        Me.Label5.Text = "Tribune"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(0, 110)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(30, 13)
+        Me.Label4.TabIndex = 88
+        Me.Label4.Text = "Time"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(0, 83)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(30, 13)
+        Me.Label3.TabIndex = 87
+        Me.Label3.Text = "Date"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(0, 56)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(37, 13)
+        Me.Label2.TabIndex = 86
+        Me.Label2.Text = "Match"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(1, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.TabIndex = 85
+        Me.Label1.Text = "EMP ID"
+        Me.Label1.Visible = False
         '
         'BuyTicket
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(608, 470)
-        Me.Controls.Add(Me.lblHargaTiketSatuan)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.cboTribune)
-        Me.Controls.Add(Me.cboMatch)
-        Me.Controls.Add(Me.cboDate)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblSeatLeft)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.btnBuy)
-        Me.Controls.Add(Me.btnCheck)
-        Me.Controls.Add(Me.txtTotPrice)
-        Me.Controls.Add(Me.txtQuantity)
-        Me.Controls.Add(Me.txtGate)
-        Me.Controls.Add(Me.txtTime)
-        Me.Controls.Add(Me.txtEmpId)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "BuyTicket"
         Me.Text = "BuyTicket"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -312,6 +328,8 @@ Partial Class BuyTicket
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button4 As Button
     Friend WithEvents Label11 As Label
+    Friend WithEvents lblSeatLeft As Label
+    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
@@ -328,7 +346,6 @@ Partial Class BuyTicket
     Friend WithEvents btnCheck As Button
     Friend WithEvents btnBuy As Button
     Friend WithEvents Label9 As Label
-    Friend WithEvents lblSeatLeft As Label
     Friend WithEvents cboDate As ComboBox
     Friend WithEvents cboMatch As ComboBox
     Friend WithEvents cboTribune As ComboBox

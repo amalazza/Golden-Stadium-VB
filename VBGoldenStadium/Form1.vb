@@ -5,7 +5,7 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+            "server=localhost;userid=root;password=;database=goldenstadium"
 
 
         Try
@@ -51,7 +51,7 @@ Public Class Form1
                     If usertype = "Admin" Then
                         ID.Text = READER.GetString("empid")
                         MessageBox.Show("Login Admin Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        Admin.Show()
+                        Admin2.Show()
                         Hide()
                         TBUsername.Clear()
                         TBPassword.Clear()
@@ -59,7 +59,7 @@ Public Class Form1
                         ID.Text = READER.GetString("empid")
                         MessageBox.Show("Login Employee Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Hide()
-                        Dim OBJ As New BuyTicket
+                        Dim OBJ As New BuyTicket2
                         OBJ.ID = ID.Text
                         OBJ.Show()
                     End If

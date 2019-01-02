@@ -22,5 +22,45 @@ VBGoldenStadium
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:VBGoldenStadium.My.Resources.Resources.account">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VBGoldenStadium.My.Resources.Resources.account_and_control">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VBGoldenStadium.My.Resources.Resources.acun">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VBGoldenStadium.My.Resources.Resources.download__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VBGoldenStadium.My.Resources.Resources.icon_user2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VBGoldenStadium.My.Resources.Resources.LogOut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VBGoldenStadium.My.Resources.Resources.uname">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VBGoldenStadium.My.Resources.Resources.user_512">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

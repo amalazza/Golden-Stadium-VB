@@ -15,7 +15,7 @@ Public Class Transaction
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+        "server=localhost;userid=root;password=;database=goldenstadium"
         Dim SDA As New MySqlDataAdapter
 
         Try

@@ -337,7 +337,7 @@ Partial Class Employee
         Me.Panel2.Location = New System.Drawing.Point(139, 245)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(391, 412)
+        Me.Panel2.Size = New System.Drawing.Size(400, 439)
         Me.Panel2.TabIndex = 31
         '
         'Label12
@@ -356,7 +356,7 @@ Partial Class Employee
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(651, 665)
+        Me.ClientSize = New System.Drawing.Size(658, 695)
         Me.Controls.Add(Me.Delete)
         Me.Controls.Add(Me.UpdateE)
         Me.Controls.Add(Me.Names)

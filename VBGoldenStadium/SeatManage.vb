@@ -14,7 +14,7 @@ Public Class SeatManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+            "server=localhost;userid=root;password=;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -41,7 +41,7 @@ Public Class SeatManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+            "server=localhost;userid=root;password=;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -74,7 +74,7 @@ Public Class SeatManage
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+        "server=localhost;userid=root;password=;database=goldenstadium"
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
 
@@ -129,7 +129,7 @@ Public Class SeatManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
+            "server=localhost;userid=root;password=;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -150,6 +150,46 @@ Public Class SeatManage
     End Sub
 
     Private Sub TableEmp_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles TableEmp.CellContentClick
+
+    End Sub
+
+    Private Sub price_TextChanged(sender As Object, e As EventArgs) Handles price.TextChanged
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub capacity_TextChanged(sender As Object, e As EventArgs) Handles capacity.TextChanged
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub gate_TextChanged(sender As Object, e As EventArgs) Handles gate.TextChanged
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub tribune_name_TextChanged(sender As Object, e As EventArgs) Handles tribune_name.TextChanged
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub matchid_TextChanged(sender As Object, e As EventArgs) Handles matchid.TextChanged
 
     End Sub
 End Class
