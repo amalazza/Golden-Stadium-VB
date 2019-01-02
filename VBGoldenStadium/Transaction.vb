@@ -15,13 +15,13 @@ Public Class Transaction
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
         Dim SDA As New MySqlDataAdapter
 
         Try
             MySqlConn.Open()
             Dim Query As String
-            Query = "SELECT transacid, employee.name, matchhh.matchh, matchhh.datee, matchhh.timee, seat.tribune_name, seat.gate, seat.capacity, total_price FROM goldenstadium.transac INNER JOIN employee ON employee.empid = transac.empid INNER JOIN seat ON seat.matchid = transac.matchid INNER JOIN matchhh ON matchhh.matchid = transac.matchid"
+            Query = "SELECT transacid, employee.name, match.matchh, match.datee, match.timee, seat.tribune_name, seat.gate, transac.quantity, total_price FROM goldenstadium.transac INNER JOIN goldenstadium.employee ON employee.empid = transac.empid INNER JOIN goldenstadium.match ON match.matchid = transac.matchid INNER JOIN goldenstadium.seat ON seat.matchid = transac.matchid"
             COMMAND = New MySqlCommand(Query, MySqlConn)
             SDA.SelectCommand = COMMAND
             SDA.Fill(dbDataSet)
@@ -54,22 +54,10 @@ Public Class Transaction
         End If
     End Sub
 
-    Private Sub Search_TextChanged(sender As Object, e As EventArgs)
-        TableEmp.ClearSelection()
-        For Each row As DataGridViewRow In TableEmp.Rows
-            For Each cell As DataGridViewCell In row.Cells
-
-                If cell.Value.StartsWith(Search.Text, StringComparison.InvariantCultureIgnoreCase) Then
-                    cell.Selected = True
-                    TableEmp.CurrentCell = TableEmp.SelectedCells(0)
-                    'Exit For
-
-                End If
-
-            Next
-        Next
-
-        TableEmp.Visible = True
+    Private Sub Search_TextChanged(sender As Object, e As EventArgs) Handles Search.TextChanged
+        Dim DV As New DataView(dbDataSet)
+        DV.RowFilter = String.Format("Convert(transacid, 'System.String') LIKE '%{0}%' OR Convert(name, 'System.String') LIKE '%{0}%' OR Convert(matchh, 'System.String') LIKE '%{0}%' OR Convert(datee, 'System.String') LIKE '%{0}%' OR Convert(timee, 'System.String') LIKE '%{0}%' OR Convert(tribune_name, 'System.String') LIKE '%{0}%' OR Convert(gate, 'System.String') LIKE '%{0}%' OR Convert(quantity, 'System.String') LIKE '%{0}%' OR Convert(total_price, 'System.String') LIKE '%{0}%'", Search.Text)
+        TableEmp.DataSource = DV
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

@@ -82,7 +82,6 @@ Partial Class SeatManage
         '
         'matchid
         '
-        Me.matchid.Enabled = False
         Me.matchid.Location = New System.Drawing.Point(314, 383)
         Me.matchid.Margin = New System.Windows.Forms.Padding(2)
         Me.matchid.MaxLength = 50

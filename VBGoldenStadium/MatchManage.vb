@@ -14,13 +14,13 @@ Public Class MatchManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
                 MySqlConn.Open()
                 Dim Query As String
-                Query = "insert into goldenstadium.matchhh (matchh, datee, timee, tournament_name) values ('" & Names.Text & "','" & datee.Text & "','" & time.Text & "','" & tournament.Text & "')"
+                Query = "insert into goldenstadium.match (matchh, datee, timee, tournament_name) values ('" & Names.Text & "','" & datee.Text & "','" & time.Text & "','" & tournament.Text & "')"
                 COMMAND = New MySqlCommand(Query, MySqlConn)
                 READER = COMMAND.ExecuteReader
                 MessageBox.Show("Match Data Saved", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -41,13 +41,13 @@ Public Class MatchManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
                 MySqlConn.Open()
                 Dim Query As String
-                Query = "update goldenstadium.matchhh Set matchh='" & Names.Text & "',datee='" & datee.Text & "',timee='" & time.Text & "',tournament_name='" & tournament.Text & "' where matchid='" & Code.Text & "'"
+                Query = "update goldenstadium.match Set matchh='" & Names.Text & "',datee='" & datee.Text & "',timee='" & time.Text & "',tournament_name='" & tournament.Text & "' where matchid='" & Code.Text & "'"
                 COMMAND = New MySqlCommand(Query, MySqlConn)
                 READER = COMMAND.ExecuteReader
                 MessageBox.Show("Match Data Updated", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -74,14 +74,14 @@ Public Class MatchManage
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
 
         Try
             MySqlConn.Open()
             Dim Query As String
-            Query = "select * from goldenstadium.matchhh"
+            Query = "select * from goldenstadium.match"
             COMMAND = New MySqlCommand(Query, MySqlConn)
             SDA.SelectCommand = COMMAND
             SDA.Fill(dbDataSet)

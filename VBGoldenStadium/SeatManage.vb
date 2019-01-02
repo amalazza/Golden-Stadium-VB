@@ -14,7 +14,7 @@ Public Class SeatManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -41,7 +41,7 @@ Public Class SeatManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -74,7 +74,7 @@ Public Class SeatManage
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
 
@@ -100,6 +100,7 @@ Public Class SeatManage
 
     Private Sub TableEmp_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles TableEmp.CellClick
         If e.RowIndex >= 0 Then
+            matchid.Enabled = False
             Dim row As DataGridViewRow
             row = TableEmp.Rows(e.RowIndex)
 
@@ -128,13 +129,13 @@ Public Class SeatManage
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
                 MySqlConn.Open()
                 Dim Query As String
-                Query = "Delete from goldenstadium.seat where matchid='" & matchid.Text & "'"
+                Query = "Delete from goldenstadium.seat where matchid='" & matchid.Text & "' and tribune_name ='" & tribune_name.Text & "' and gate = '" & gate.Text & "' and capacity = '" & capacity.Text & "' and price = '" & price.Text & "'"
                 COMMAND = New MySqlCommand(Query, MySqlConn)
                 READER = COMMAND.ExecuteReader
                 MessageBox.Show("Seat Data Deleted", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
