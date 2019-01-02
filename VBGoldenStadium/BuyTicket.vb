@@ -16,6 +16,7 @@ Public Class BuyTicket
         txtTime.Enabled = False
         txtGate.Enabled = False
         txtTotPrice.Enabled = False
+        btnBuy.Enabled = False
         txtEmpId.Text = ID
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
@@ -188,6 +189,7 @@ Public Class BuyTicket
             seatleft = Integer.Parse(lblSeatLeft.Text) - Integer.Parse(txtQuantity.Text)
             lblSeatLeft.Text = seatleft
             txtTotPrice.Text = (Integer.Parse(txtQuantity.Text) * Integer.Parse(lblHargaTiketSatuan.Text)).ToString
+            btnBuy.Enabled = True
         End If
     End Sub
 
@@ -233,7 +235,7 @@ Public Class BuyTicket
                 str = "insert into goldenstadium.transac (empid, matchid, quantity, total_price) values ('" & empid & "','" & matchid & "','" & quantity & "','" & totprice & "')"
                 cmd = New MySqlCommand(str, MySqlConn)
                 reader = cmd.ExecuteReader
-                MessageBox.Show("Seat Data Saved", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Transaction Success", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 MySqlConn.Close()
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
