@@ -22,6 +22,7 @@ Partial Class Transaction2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Transaction2))
         Me.Label9 = New System.Windows.Forms.Label()
         Me.logout = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -45,6 +46,7 @@ Partial Class Transaction2
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.e_namee = New System.Windows.Forms.TextBox()
@@ -76,6 +78,7 @@ Partial Class Transaction2
         Me.Panel2.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         Me.pnlDashboard.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -84,11 +87,11 @@ Partial Class Transaction2
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label9.Location = New System.Drawing.Point(12, 8)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(147, 20)
+        Me.Label9.Size = New System.Drawing.Size(137, 21)
         Me.Label9.TabIndex = 6
         Me.Label9.Text = "Transaction Search"
         '
@@ -97,7 +100,7 @@ Partial Class Transaction2
         Me.logout.BackColor = System.Drawing.Color.DodgerBlue
         Me.logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.logout.FlatAppearance.BorderSize = 0
-        Me.logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.logout.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.logout.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.logout.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(244, Byte), Integer))
         Me.logout.Image = Global.VBGoldenStadium.My.Resources.Resources.LogOut
@@ -137,15 +140,16 @@ Partial Class Transaction2
         '
         Me.btnTransac.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnTransac.FlatAppearance.BorderSize = 0
-        Me.btnTransac.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTransac.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTransac.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTransac.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTransac.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnTransac.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnTransac.Location = New System.Drawing.Point(8, 267)
+        Me.btnTransac.Location = New System.Drawing.Point(8, 294)
         Me.btnTransac.Name = "btnTransac"
-        Me.btnTransac.Size = New System.Drawing.Size(192, 28)
+        Me.btnTransac.Size = New System.Drawing.Size(192, 38)
         Me.btnTransac.TabIndex = 3
         Me.btnTransac.Text = "Transaction"
+        Me.btnTransac.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnTransac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnTransac.UseVisualStyleBackColor = False
         '
@@ -153,15 +157,16 @@ Partial Class Transaction2
         '
         Me.btnSeat.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnSeat.FlatAppearance.BorderSize = 0
-        Me.btnSeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSeat.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSeat.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSeat.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSeat.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnSeat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSeat.Location = New System.Drawing.Point(8, 232)
+        Me.btnSeat.Location = New System.Drawing.Point(8, 250)
         Me.btnSeat.Name = "btnSeat"
-        Me.btnSeat.Size = New System.Drawing.Size(192, 28)
+        Me.btnSeat.Size = New System.Drawing.Size(192, 38)
         Me.btnSeat.TabIndex = 2
         Me.btnSeat.Text = "Seat"
+        Me.btnSeat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSeat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSeat.UseVisualStyleBackColor = False
         '
@@ -169,15 +174,16 @@ Partial Class Transaction2
         '
         Me.btnMatch.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnMatch.FlatAppearance.BorderSize = 0
-        Me.btnMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMatch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMatch.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMatch.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMatch.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnMatch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMatch.Location = New System.Drawing.Point(8, 197)
+        Me.btnMatch.Location = New System.Drawing.Point(8, 206)
         Me.btnMatch.Name = "btnMatch"
-        Me.btnMatch.Size = New System.Drawing.Size(192, 28)
+        Me.btnMatch.Size = New System.Drawing.Size(192, 38)
         Me.btnMatch.TabIndex = 1
         Me.btnMatch.Text = "Match"
+        Me.btnMatch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnMatch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnMatch.UseVisualStyleBackColor = False
         '
@@ -185,14 +191,15 @@ Partial Class Transaction2
         '
         Me.btnEmployee.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnEmployee.FlatAppearance.BorderSize = 0
-        Me.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEmployee.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnEmployee.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEmployee.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnEmployee.Location = New System.Drawing.Point(8, 162)
         Me.btnEmployee.Name = "btnEmployee"
-        Me.btnEmployee.Size = New System.Drawing.Size(192, 28)
+        Me.btnEmployee.Size = New System.Drawing.Size(192, 38)
         Me.btnEmployee.TabIndex = 0
         Me.btnEmployee.Text = "Employee"
+        Me.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnEmployee.UseVisualStyleBackColor = False
         '
@@ -237,11 +244,11 @@ Partial Class Transaction2
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label33.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label33.Location = New System.Drawing.Point(12, 8)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(135, 20)
+        Me.Label33.Size = New System.Drawing.Size(127, 21)
         Me.Label33.TabIndex = 6
         Me.Label33.Text = "Transaction Table"
         '
@@ -259,9 +266,10 @@ Partial Class Transaction2
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(229, 14)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(41, 13)
+        Me.Label14.Size = New System.Drawing.Size(40, 13)
         Me.Label14.TabIndex = 33
         Me.Label14.Text = "Search"
         '
@@ -275,10 +283,11 @@ Partial Class Transaction2
         '
         'Search
         '
+        Me.Search.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Search.Location = New System.Drawing.Point(354, 11)
         Me.Search.Margin = New System.Windows.Forms.Padding(2)
         Me.Search.Name = "Search"
-        Me.Search.Size = New System.Drawing.Size(162, 20)
+        Me.Search.Size = New System.Drawing.Size(162, 22)
         Me.Search.TabIndex = 32
         '
         'Panel9
@@ -293,6 +302,7 @@ Partial Class Transaction2
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.OrangeRed
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(200, 0)
@@ -303,11 +313,11 @@ Partial Class Transaction2
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semilight", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(25, 24)
+        Me.Label3.Location = New System.Drawing.Point(23, 15)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(316, 25)
+        Me.Label3.Size = New System.Drawing.Size(355, 38)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Dashboard / Transaction List"
         '
@@ -323,21 +333,23 @@ Partial Class Transaction2
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label13.Location = New System.Drawing.Point(12, 8)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(131, 20)
+        Me.Label13.Size = New System.Drawing.Size(124, 21)
         Me.Label13.TabIndex = 6
         Me.Label13.Text = "Transaction Data"
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Coral
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.logout)
         Me.Panel1.Controls.Add(Me.Button7)
         Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.btnTransac)
         Me.Panel1.Controls.Add(Me.btnSeat)
         Me.Panel1.Controls.Add(Me.btnMatch)
@@ -348,15 +360,27 @@ Partial Class Transaction2
         Me.Panel1.Size = New System.Drawing.Size(200, 611)
         Me.Panel1.TabIndex = 33
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(40, 15)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(117, 92)
+        Me.PictureBox1.TabIndex = 22
+        Me.PictureBox1.TabStop = False
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(58, 102)
+        Me.Label1.Location = New System.Drawing.Point(40, 110)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(86, 16)
-        Me.Label1.TabIndex = 7
+        Me.Label1.Size = New System.Drawing.Size(120, 25)
+        Me.Label1.TabIndex = 21
         Me.Label1.Text = "Nama Admin"
         '
         'Panel5
@@ -389,56 +413,62 @@ Partial Class Transaction2
         'e_namee
         '
         Me.e_namee.Enabled = False
+        Me.e_namee.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.e_namee.Location = New System.Drawing.Point(338, 50)
         Me.e_namee.Margin = New System.Windows.Forms.Padding(2)
         Me.e_namee.Name = "e_namee"
-        Me.e_namee.Size = New System.Drawing.Size(162, 20)
+        Me.e_namee.Size = New System.Drawing.Size(162, 22)
         Me.e_namee.TabIndex = 71
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(212, 50)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(84, 13)
+        Me.Label2.Size = New System.Drawing.Size(85, 13)
         Me.Label2.TabIndex = 70
         Me.Label2.Text = "Employee Name"
         '
         'total_pricee
         '
         Me.total_pricee.Enabled = False
+        Me.total_pricee.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.total_pricee.Location = New System.Drawing.Point(340, 220)
         Me.total_pricee.Margin = New System.Windows.Forms.Padding(2)
         Me.total_pricee.Name = "total_pricee"
-        Me.total_pricee.Size = New System.Drawing.Size(162, 20)
+        Me.total_pricee.Size = New System.Drawing.Size(162, 22)
         Me.total_pricee.TabIndex = 69
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.White
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(214, 220)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(58, 13)
+        Me.Label10.Size = New System.Drawing.Size(55, 13)
         Me.Label10.TabIndex = 68
         Me.Label10.Text = "Total Price"
         '
         'quantityy
         '
         Me.quantityy.Enabled = False
+        Me.quantityy.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.quantityy.Location = New System.Drawing.Point(340, 196)
         Me.quantityy.Margin = New System.Windows.Forms.Padding(2)
         Me.quantityy.Name = "quantityy"
-        Me.quantityy.Size = New System.Drawing.Size(162, 20)
+        Me.quantityy.Size = New System.Drawing.Size(162, 22)
         Me.quantityy.TabIndex = 67
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.White
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(214, 196)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
@@ -449,56 +479,62 @@ Partial Class Transaction2
         'gatee
         '
         Me.gatee.Enabled = False
+        Me.gatee.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gatee.Location = New System.Drawing.Point(339, 171)
         Me.gatee.Margin = New System.Windows.Forms.Padding(2)
         Me.gatee.Name = "gatee"
-        Me.gatee.Size = New System.Drawing.Size(162, 20)
+        Me.gatee.Size = New System.Drawing.Size(162, 22)
         Me.gatee.TabIndex = 65
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(213, 171)
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(213, 174)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(30, 13)
+        Me.Label7.Size = New System.Drawing.Size(29, 13)
         Me.Label7.TabIndex = 64
         Me.Label7.Text = "Gate"
         '
         'tribune_namee
         '
         Me.tribune_namee.Enabled = False
+        Me.tribune_namee.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tribune_namee.Location = New System.Drawing.Point(339, 147)
         Me.tribune_namee.Margin = New System.Windows.Forms.Padding(2)
         Me.tribune_namee.Name = "tribune_namee"
-        Me.tribune_namee.Size = New System.Drawing.Size(162, 20)
+        Me.tribune_namee.Size = New System.Drawing.Size(162, 22)
         Me.tribune_namee.TabIndex = 63
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.White
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(213, 147)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(43, 13)
+        Me.Label8.Size = New System.Drawing.Size(42, 13)
         Me.Label8.TabIndex = 62
         Me.Label8.Text = "Tribune"
         '
         'timeee
         '
         Me.timeee.Enabled = False
+        Me.timeee.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.timeee.Location = New System.Drawing.Point(339, 123)
         Me.timeee.Margin = New System.Windows.Forms.Padding(2)
         Me.timeee.Name = "timeee"
-        Me.timeee.Size = New System.Drawing.Size(162, 20)
+        Me.timeee.Size = New System.Drawing.Size(162, 22)
         Me.timeee.TabIndex = 61
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(213, 123)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
@@ -509,16 +545,18 @@ Partial Class Transaction2
         'dateee
         '
         Me.dateee.Enabled = False
+        Me.dateee.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dateee.Location = New System.Drawing.Point(338, 98)
         Me.dateee.Margin = New System.Windows.Forms.Padding(2)
         Me.dateee.Name = "dateee"
-        Me.dateee.Size = New System.Drawing.Size(162, 20)
+        Me.dateee.Size = New System.Drawing.Size(162, 22)
         Me.dateee.TabIndex = 59
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(212, 98)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
@@ -529,16 +567,18 @@ Partial Class Transaction2
         'matchhh
         '
         Me.matchhh.Enabled = False
+        Me.matchhh.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.matchhh.Location = New System.Drawing.Point(338, 74)
         Me.matchhh.Margin = New System.Windows.Forms.Padding(2)
         Me.matchhh.Name = "matchhh"
-        Me.matchhh.Size = New System.Drawing.Size(162, 20)
+        Me.matchhh.Size = New System.Drawing.Size(162, 22)
         Me.matchhh.TabIndex = 57
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.White
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(212, 74)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
@@ -549,20 +589,22 @@ Partial Class Transaction2
         'transacidd
         '
         Me.transacidd.Enabled = False
+        Me.transacidd.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.transacidd.Location = New System.Drawing.Point(338, 26)
         Me.transacidd.Margin = New System.Windows.Forms.Padding(2)
         Me.transacidd.Name = "transacidd"
-        Me.transacidd.Size = New System.Drawing.Size(162, 20)
+        Me.transacidd.Size = New System.Drawing.Size(162, 22)
         Me.transacidd.TabIndex = 55
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.White
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(212, 30)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(91, 13)
+        Me.Label12.Size = New System.Drawing.Size(88, 13)
         Me.Label12.TabIndex = 54
         Me.Label12.Text = "Transaction Code"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -610,6 +652,7 @@ Partial Class Transaction2
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pnlDashboard)
         Me.Name = "Transaction2"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Transaction2"
         Me.Panel26.ResumeLayout(False)
         CType(Me.TableEmp, System.ComponentModel.ISupportInitialize).EndInit()
@@ -625,6 +668,7 @@ Partial Class Transaction2
         Me.Panel6.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.pnlDashboard.ResumeLayout(False)
@@ -656,7 +700,6 @@ Partial Class Transaction2
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label13 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents pnlDashboard As Panel
     Friend WithEvents Panel3 As Panel
@@ -679,4 +722,6 @@ Partial Class Transaction2
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label1 As Label
 End Class

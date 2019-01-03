@@ -29,9 +29,9 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TBUsername = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ID = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +44,7 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.TBUsername)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(45, 153)
+        Me.Panel2.Location = New System.Drawing.Point(44, 166)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(297, 299)
         Me.Panel2.TabIndex = 25
@@ -108,27 +108,16 @@ Partial Class Form1
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Username"
         '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Location = New System.Drawing.Point(107, 5)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(174, 142)
-        Me.Panel1.TabIndex = 24
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semilight", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(63, 122)
+        Me.Label3.Location = New System.Drawing.Point(63, 124)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(265, 67)
+        Me.Label3.Size = New System.Drawing.Size(263, 65)
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "Login Form"
         '
@@ -142,11 +131,21 @@ Partial Class Form1
         Me.ID.Text = "Label4"
         Me.ID.Visible = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Location = New System.Drawing.Point(107, 17)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(174, 104)
+        Me.Panel1.TabIndex = 24
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BackColor = System.Drawing.Color.LightSalmon
         Me.ClientSize = New System.Drawing.Size(397, 477)
         Me.Controls.Add(Me.ID)
         Me.Controls.Add(Me.Label3)
@@ -167,7 +166,7 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents TBUsername As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents ID As Label
+    Friend WithEvents Panel1 As Panel
 End Class

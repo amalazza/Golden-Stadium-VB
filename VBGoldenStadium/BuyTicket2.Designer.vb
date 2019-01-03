@@ -285,11 +285,11 @@ Partial Class BuyTicket2
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Button4.BackColor = System.Drawing.Color.SlateGray
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Segoe UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(31, 35)
+        Me.Button4.Location = New System.Drawing.Point(39, 45)
         Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(91, 55)
@@ -302,7 +302,7 @@ Partial Class BuyTicket2
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI Semilight", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(262, 25)
+        Me.Label11.Location = New System.Drawing.Point(270, 35)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(269, 65)
@@ -352,25 +352,26 @@ Partial Class BuyTicket2
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Panel1.BackColor = System.Drawing.Color.LightSlateGray
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Location = New System.Drawing.Point(1, 2)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(783, 141)
+        Me.Panel1.Size = New System.Drawing.Size(781, 141)
         Me.Panel1.TabIndex = 57
         '
         'BuyTicket2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.PapayaWhip
+        Me.BackColor = System.Drawing.Color.LightSalmon
         Me.ClientSize = New System.Drawing.Size(783, 529)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "BuyTicket2"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BuyTicket2"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
