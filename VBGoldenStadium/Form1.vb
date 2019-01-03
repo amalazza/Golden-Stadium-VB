@@ -5,7 +5,7 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
 
         Try
@@ -30,7 +30,7 @@ Public Class Form1
 
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try

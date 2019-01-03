@@ -14,7 +14,7 @@ Public Class SeatManage2
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -41,7 +41,7 @@ Public Class SeatManage2
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try
@@ -74,7 +74,7 @@ Public Class SeatManage2
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
 
@@ -125,7 +125,7 @@ Public Class SeatManage2
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
             Dim READER As MySqlDataReader
 
             Try

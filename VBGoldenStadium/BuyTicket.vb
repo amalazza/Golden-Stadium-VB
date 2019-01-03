@@ -20,12 +20,12 @@ Public Class BuyTicket
         txtEmpId.Text = ID
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select matchh from goldenstadium.matchhh"
+            str = "select matchh from goldenstadium.match"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -57,12 +57,12 @@ Public Class BuyTicket
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select datee from goldenstadium.matchhh where matchh = '" & match & "'"
+            str = "select datee from goldenstadium.match where matchh = '" & match & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -94,12 +94,12 @@ Public Class BuyTicket
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select * from goldenstadium.matchhh inner join goldenstadium.seat on goldenstadium.matchhh.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "'"
+            str = "select * from goldenstadium.match inner join goldenstadium.seat on goldenstadium.match.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -127,12 +127,12 @@ Public Class BuyTicket
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select * from goldenstadium.matchhh inner join goldenstadium.seat on goldenstadium.matchhh.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "' and tribune_name = '" & tribune & "'"
+            str = "select * from goldenstadium.match inner join goldenstadium.seat on goldenstadium.match.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "' and tribune_name = '" & tribune & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -157,12 +157,12 @@ Public Class BuyTicket
     Private Sub btnCheck_Click(sender As Object, e As EventArgs)
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select * from goldenstadium.matchhh inner join goldenstadium.seat on goldenstadium.matchhh.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "' and tribune_name = '" & tribune & "'"
+            str = "select * from goldenstadium.match inner join goldenstadium.seat on goldenstadium.match.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "' and tribune_name = '" & tribune & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -199,12 +199,12 @@ Public Class BuyTicket
         quantity = txtQuantity.Text
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select matchid from goldenstadium.matchhh where matchh = '" & match & "' and datee = '" & matchdate & "'"
+            str = "select matchid from goldenstadium.match where matchh = '" & match & "' and datee = '" & matchdate & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -227,7 +227,7 @@ Public Class BuyTicket
         Else
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
             Try
                 MySqlConn.Open()
@@ -245,7 +245,7 @@ Public Class BuyTicket
 
             MySqlConn = New MySqlConnection
             MySqlConn.ConnectionString =
-            "server=localhost;userid=root;password=;database=goldenstadium"
+            "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
 
             Try
                 MySqlConn.Open()

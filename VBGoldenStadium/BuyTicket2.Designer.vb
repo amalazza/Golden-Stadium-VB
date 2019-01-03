@@ -46,8 +46,8 @@ Partial Class BuyTicket2
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.lblSeatLeft = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblSeatLeft = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -55,6 +55,7 @@ Partial Class BuyTicket2
         'lblHargaTiketSatuan
         '
         Me.lblHargaTiketSatuan.AutoSize = True
+        Me.lblHargaTiketSatuan.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.lblHargaTiketSatuan.Location = New System.Drawing.Point(278, 144)
         Me.lblHargaTiketSatuan.Name = "lblHargaTiketSatuan"
         Me.lblHargaTiketSatuan.Size = New System.Drawing.Size(0, 13)
@@ -67,7 +68,7 @@ Partial Class BuyTicket2
         Me.Label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label10.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.Label10.Location = New System.Drawing.Point(261, 138)
+        Me.Label10.Location = New System.Drawing.Point(261, 141)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(24, 19)
         Me.Label10.TabIndex = 125
@@ -75,6 +76,7 @@ Partial Class BuyTicket2
         '
         'cboTribune
         '
+        Me.cboTribune.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTribune.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboTribune.FormattingEnabled = True
         Me.cboTribune.Items.AddRange(New Object() {"Choose Tribune :", "Regular", "VIP"})
@@ -85,6 +87,7 @@ Partial Class BuyTicket2
         '
         'cboMatch
         '
+        Me.cboMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMatch.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboMatch.FormattingEnabled = True
         Me.cboMatch.Location = New System.Drawing.Point(134, 43)
@@ -94,6 +97,7 @@ Partial Class BuyTicket2
         '
         'cboDate
         '
+        Me.cboDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboDate.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboDate.FormattingEnabled = True
         Me.cboDate.Location = New System.Drawing.Point(134, 74)
@@ -106,7 +110,7 @@ Partial Class BuyTicket2
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.Label9.Location = New System.Drawing.Point(342, 207)
+        Me.Label9.Location = New System.Drawing.Point(384, 173)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(58, 17)
         Me.Label9.TabIndex = 121
@@ -340,16 +344,6 @@ Partial Class BuyTicket2
         Me.Panel2.Size = New System.Drawing.Size(494, 359)
         Me.Panel2.TabIndex = 58
         '
-        'lblSeatLeft
-        '
-        Me.lblSeatLeft.AutoSize = True
-        Me.lblSeatLeft.Location = New System.Drawing.Point(345, 167)
-        Me.lblSeatLeft.Name = "lblSeatLeft"
-        Me.lblSeatLeft.Size = New System.Drawing.Size(45, 13)
-        Me.lblSeatLeft.TabIndex = 127
-        Me.lblSeatLeft.Text = "Label12"
-        Me.lblSeatLeft.Visible = False
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.LightSlateGray
@@ -361,6 +355,16 @@ Partial Class BuyTicket2
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(781, 141)
         Me.Panel1.TabIndex = 57
+        '
+        'lblSeatLeft
+        '
+        Me.lblSeatLeft.AutoSize = True
+        Me.lblSeatLeft.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSeatLeft.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.lblSeatLeft.Location = New System.Drawing.Point(384, 204)
+        Me.lblSeatLeft.Name = "lblSeatLeft"
+        Me.lblSeatLeft.Size = New System.Drawing.Size(0, 17)
+        Me.lblSeatLeft.TabIndex = 127
         '
         'BuyTicket2
         '

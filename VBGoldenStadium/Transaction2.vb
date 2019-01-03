@@ -15,13 +15,13 @@ Public Class Transaction2
 
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
-        "server=localhost;userid=root;password=;database=goldenstadium"
+        "server=localhost;userid=root;password=Bastard423;database=goldenstadium"
         Dim SDA As New MySqlDataAdapter
 
         Try
             MySqlConn.Open()
             Dim Query As String
-            Query = "SELECT transacid, employee.name, matchhh.matchh, matchhh.datee, matchhh.timee, seat.tribune_name, seat.gate, transac.quantity, total_price FROM goldenstadium.transac INNER JOIN goldenstadium.employee ON employee.empid = transac.empid INNER JOIN goldenstadium.matchhh ON matchhh.matchid = transac.matchid INNER JOIN goldenstadium.seat ON seat.matchid = transac.matchid"
+            Query = "SELECT transacid, employee.name, match.matchh, match.datee, match.timee, seat.tribune_name, seat.gate, transac.quantity, total_price FROM goldenstadium.transac INNER JOIN goldenstadium.employee ON employee.empid = transac.empid INNER JOIN goldenstadium.match ON match.matchid = transac.matchid INNER JOIN goldenstadium.seat ON seat.matchid = transac.matchid"
             COMMAND = New MySqlCommand(Query, MySqlConn)
             SDA.SelectCommand = COMMAND
             SDA.Fill(dbDataSet)

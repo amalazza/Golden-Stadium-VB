@@ -149,3 +149,9 @@ C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Golden-Stadium-VB\Golden-Sta
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Golden-Stadium-VB\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.SeatManage2.resources
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Golden-Stadium-VB\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.Transaction2.resources
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Golden-Stadium-VB\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.BuyTicket2.resources
+M:\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.Admin2.resources
+M:\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.BuyTicket2.resources
+M:\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.Employee2.resources
+M:\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.MatchManage2.resources
+M:\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.SeatManage2.resources
+M:\Golden-Stadium-VB\VBGoldenStadium\obj\Debug\VBGoldenStadium.Transaction2.resources
